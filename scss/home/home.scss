@@ -1,12 +1,77 @@
 #app {
     max-width: 1920px;
-    height: 100%;
-    margin: 0 auto;
-    background-color: brown;
-
-    img {
-        width: 300px;
-        height: 300px;
-        object-fit: contain;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0,0.9)), url(../images/back-img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .wrapper {
+        .game-holder {
+            max-width: 300px;
+            height: 845px;
+            margin: 50px;
+            color: whitesmoke;
+            padding: 10px;
+            border-bottom: solid 2px #bdbdbdbf;
+            h3 {
+                font-family: 'Lora', serif;
+                font-weight: 600;
+                font-size: 20px;
+            }
+            img {
+                width: 296px;
+                height: 300px;
+                object-fit: cover;
+                margin: -10px;
+            }
+            .descript {
+                padding-top: 10px;
+                font-family: 'Poppins', sans-serif;
+                span {
+                    font-family: 'Lora', serif;
+                    font-weight: 600;
+                }
+                .short {
+                    padding-bottom: 5px;
+                }
+                .long {
+                    padding-bottom: 5px;
+    
+                }
+            }
+            .rate {
+                padding-bottom: 5px;
+    
+            }
+            .date {
+                padding-bottom: 5px;
+    
+            }
+            .dev {
+                padding-bottom: 5px;
+    
+            }
+            .pub {
+                padding-bottom: 5px;
+    
+            }
+            .engine {
+                padding-bottom: 5px;
+    
+            }
+            .genre {
+                padding-bottom: 5px;
+            }
+        }
+        .game-holder:hover {
+            box-shadow: -1px 4px 39px 18px #bdbdbdbf;
+            -webkit-box-shadow: -1px 4px 39px 18px rgba(189,189,189,0.75);
+            -moz-box-shadow: -1px 4px 39px 18px rgba(189,189,189,0.75);
+        }
     }
+
+
 }

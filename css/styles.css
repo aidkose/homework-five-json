@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&family=Poppins:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -14,14 +15,70 @@ h1, h2, h3, h4, h5, h6, p {
 
 #app {
   max-width: 1920px;
-  height: 100%;
-  margin: 0 auto;
-  background-color: brown;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(../images/back-img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-#app img {
-  width: 300px;
+#app .wrapper .game-holder {
+  max-width: 300px;
+  height: 845px;
+  margin: 50px;
+  color: whitesmoke;
+  padding: 10px;
+  border-bottom: solid 2px rgba(189, 189, 189, 0.7490196078);
+}
+#app .wrapper .game-holder h3 {
+  font-family: "Lora", serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+#app .wrapper .game-holder img {
+  width: 296px;
   height: 300px;
-  object-fit: contain;
+  object-fit: cover;
+  margin: -10px;
+}
+#app .wrapper .game-holder .descript {
+  padding-top: 10px;
+  font-family: "Poppins", sans-serif;
+}
+#app .wrapper .game-holder .descript span {
+  font-family: "Lora", serif;
+  font-weight: 600;
+}
+#app .wrapper .game-holder .descript .short {
+  padding-bottom: 5px;
+}
+#app .wrapper .game-holder .descript .long {
+  padding-bottom: 5px;
+}
+#app .wrapper .game-holder .rate {
+  padding-bottom: 5px;
+}
+#app .wrapper .game-holder .date {
+  padding-bottom: 5px;
+}
+#app .wrapper .game-holder .dev {
+  padding-bottom: 5px;
+}
+#app .wrapper .game-holder .pub {
+  padding-bottom: 5px;
+}
+#app .wrapper .game-holder .engine {
+  padding-bottom: 5px;
+}
+#app .wrapper .game-holder .genre {
+  padding-bottom: 5px;
+}
+#app .wrapper .game-holder:hover {
+  box-shadow: -1px 4px 39px 18px rgba(189, 189, 189, 0.7490196078);
+  -webkit-box-shadow: -1px 4px 39px 18px rgba(189, 189, 189, 0.75);
+  -moz-box-shadow: -1px 4px 39px 18px rgba(189, 189, 189, 0.75);
 }
 
 /*# sourceMappingURL=styles.css.map */
